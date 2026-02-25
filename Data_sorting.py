@@ -1,11 +1,9 @@
 import os
+folder = r"G:\VIKASH\QGIS_work\All_year_dataset\Unsorted_year_wise\2012_Mask_tiles" 
+prefix = "Mask_"                                   # base name (note underscore for clarity)
+start = 159                                        # starting number (e.g., 1 → Image_001)
 
-# --- USER INPUTS ---
-folder = r"G:\VIKASH\QGIS_work\All_year_dataset\Unsorted_year_wise\2012_Mask_tiles" # folder path
-prefix = "Mask_"                               # base name (note underscore for clarity)
-start = 159                                       # starting number (e.g., 1 → Image_001)
 
-# --- CODE ---
 files = sorted(os.listdir(folder))  # get all files sorted
 
 for i, filename in enumerate(files, start=start):
@@ -24,3 +22,4 @@ for i, filename in enumerate(files, start=start):
     
     os.rename(old_path, new_path)
     print(f"Renamed: {filename} -> {new_name}")
+
