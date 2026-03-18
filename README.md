@@ -4,3 +4,4 @@ This repo contains different workflow automation for easy and structured process
   2. Retile_and_del_outliner takes map, boundary and retiling size in pixels. It deletes the tiles intersecting with boundary for a clean square tile for model training.
   3. Data_sorting keeps the indexing in control.
   4. Accuracy_test is for checking ground truth points to predicted points accuracy in LULC prediction
+  5. most of the work is on scriprs made in pyhton and is flexible for different types of layers
